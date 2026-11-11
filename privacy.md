@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # GymTrainer — Privacy Policy
 
-_Last updated: 9 November 2026_
+_Last updated: 11 November 2026_
 
 GymTrainer ("the app", "we") is a personal gym, nutrition, and body-tracking app for iPhone and Apple Watch. We designed it to be private by default: your data stays on your device unless you explicitly use a feature that needs to send it somewhere. This policy explains what data the app handles and why.
 
@@ -15,6 +15,7 @@ GymTrainer ("the app", "we") is a personal gym, nutrition, and body-tracking app
 - **Your data is stored on your device** (via Apple's on-device database) and, if you choose, in your own Apple Health.
 - **We do not run ads, analytics, tracking, or third-party marketing SDKs.**
 - **The data that leaves your device** goes only to Google's Gemini API, using an API key that you provide: (a) a meal photo and/or text you submit for nutrition analysis, and (b) — only when you tap "Get advice" in the AI Coach — a summary of the selected period, including the specific foods you logged (with their calories/macros), the exercises, sets, and weights you performed, calories in/out, body weight, and your goal.
+- **Exercise catalog downloads.** The app downloads the public exercise list and exercise photos from GitHub and checks there for catalog updates. These requests contain no personal, workout, or health data; like any web request, GitHub can see your device's IP address (see GitHub's privacy statement).
 
 ## Data stored on your device
 
@@ -26,7 +27,7 @@ You can export a backup file (JSON) and import it yourself. Those files are crea
 
 If you grant permission, the app:
 
-- **Reads** heart rate, active energy, sleep, and body mass to analyze your workouts, recovery, and daily energy.
+- **Reads** heart rate, active and resting energy, workouts, sleep, and body mass to analyze your workouts, recovery, and daily energy.
 - **Writes** your body-weight entries, completed workouts (with estimated calories), and logged nutrition to Apple Health.
 
 Health data is used **only** to provide in-app features. It is **never** used for advertising, marketing, or data mining, and is never shared with us or any third party. You can revoke access anytime in the Health app.
@@ -35,7 +36,7 @@ Health data is used **only** to provide in-app features. It is **never** used fo
 
 The meal-logging feature is optional. When you use it, the meal **photo and/or text description you provide** is sent over an encrypted (HTTPS) connection to Google's Gemini API to estimate calories and macros. 
 
-- This request is made using **a Google Gemini API key that you obtain and enter yourself.** Your use of Google's API is governed by Google's terms and privacy policy.
+- This request is made using **a Google Gemini API key that you obtain and enter yourself.** Your use of Google's API is governed by Google's terms and privacy policy. Note that on Google's free Gemini API tier, Google may use submitted content to improve its products; a paid tier changes this.
 - We do not store these photos or results on any server; the estimate is returned to your device and saved locally in your food log.
 - Your API key is stored securely in the device Keychain and is never transmitted to us.
 
